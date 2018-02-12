@@ -1,0 +1,45 @@
+HEAD => указатель где сейчас находимс€
+
+git init
+git status
+
+git add <file.php> (конкретный файл)
+git add .  (добавить все файлы + не подготовленные и скрытые файлы)
+git add -a (добавить все файлы)
+git checout master
+
+git commit -m "text for commit"
+
+git checkout <commit-hash> (откатитьс€ к коммиту , хеш коммита - fc22751)
+git checkout master (переключить ветку)
+
+git log (журнал всех коммитов)
+- enter (просмотр)
+- q	 (выход с журнала)
+
+git diff посмотреть список изменений (enter просмотр по списку)
+
+git config -l (конфиг посмотреть список)
+git config --global user.name "Kirillos" (--global настройка дл€ всех репозиториев)
+
+создать команду дл€ git с ключем 
+git config --global alias.tree "log --oneline --decorate --all --graph"
+git tree (просмотреть все коммиты , список коммитов)
+
+/= branch =====/
+
+git branch (список веток)
+git branch my-branch (создаем новую ветку, <my-branch> им€ ветки )
+
+git branch -d (удалить ветку, при этом коммиты не удал€ютс€)
+
+пример MERGE
+
+git checkout master (перешли в мастер)
+git merge <им€ ветки> (которую хотим влить в мастер)
+
+
+git remote add origin <ссылка на адрес репозитори€> - св€зать локалную ветку с репозиторием http://github.com/user
+git remote -v
+
+обь€сните такой подход когда идет спринт (недельный), потом собираетс€ релиз, и все это  изменени€ идут через pull request 
